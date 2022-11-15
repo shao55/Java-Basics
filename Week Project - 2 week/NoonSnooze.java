@@ -12,10 +12,13 @@ public class NoonSnooze {
         mins = minNum % 60;
 
         if (minNum / 60 / 12 % 2 == 0) {
-            System.out.println(hours + ":" + String.format("%02d", mins) + " pm");
+            System.out.printf("%d:%02d%s", hours, mins, " pm");
         }
         else {
-            System.out.println(hours + ":" + String.format("%02d", mins) + " am");
+            System.out.printf("%d:%02d%s", hours, mins, " am");
         }
+        //    %d - int;
+        //    %f - double;
+        //    %s - string;
     }
 }
