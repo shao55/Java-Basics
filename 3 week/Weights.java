@@ -4,8 +4,9 @@ public class Weights {
         and prints the corresponding kickboxing weight - class according to the table below.Use an
         integer array to store the weight limits and a string array to store the weight categories
         (ranging from Flyweight to Super Heavyweight) */
-        
-        int weight = Integer.parseInt(args[0]);
+
+        int weight = Integer.parseInt(args[0]); // Вводим вес, для определения весовой категории
+        // Массивы weights и categories должны совпадать по длинне и данным.
         int[] weights = {
                 112, 115, 118, 122, 126, 130, 135, 140,
                 147, 154, 160, 167, 174, 183, 189, 198, 209, 9999
@@ -22,7 +23,9 @@ public class Weights {
         };
 
         for (int i = 0; i < weights.length; i++) {
+            // Проверяем соответствие введенных значений в массиве
             if (weight < weights[i]) {
+                // В зависимости от индекса weights печатаем элемент в массиве categories
                 System.out.println(categories[i]);
                 break;
             }
@@ -31,6 +34,5 @@ public class Weights {
                 break;
             }
         }
-
     }
 }
