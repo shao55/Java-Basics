@@ -1,57 +1,42 @@
-Programming Assignment: Image Classifier
+Programming Assignment: Image Classification Part2
+
+/******************************************************************************
+ ***            Some information to help us get to know you.                ***
+ ******************************************************************************/
+
+Nickname (i.e., what you prefer to be called in class): Nurgissa
+
+Cohort: nFactorial Start - Batch 29
+
+Confidence level (0 = very afraid, 5 = very confident) 3
 
 
 /**********************************************************************
  * Approximate number of hours to complete this assignment            *
  **********************************************************************/
 
-Number of hours: 24
-
-/**********************************************************************
- * Some people (especially in Europe and Latin America) write a 7     *
- * with a line through the middle, while others (especially in Japan  *
- * and Korea) make the top line crooked.                              *
- *                                                                    *
- * Suppose that the training data consists solely of samples that do  *
- * not use any of these conventions. How well do you think the        *
- * algorithm will perform when you test it on different populations?  *
- * What are the possible consequences?                                *
- **********************************************************************/
-
-ANSWER:
-
-/**********************************************************************
- * Now suppose that you are using a supervised learning algorithm to  *
- * diagnose cancer. Suppose the training data consists of examples    *
- * solely on individuals from population X but you use it on          *
- * individuals from population Y. What are the possible consequences? *
- **********************************************************************/
-
-ANSWER:
+Number of hours: 12
 
 
 
-/**********************************************************************
- *  Did you receive help from classmates, past students, or
- *  anyone else? If so, please list their names.  ("A Sunday lab TA"
- *  or "Office hours on Thursday" is ok if you don't know their name.)
- **********************************************************************/
+/******************************************************************************
+ ***   Did you receive help from classmates or      ***
+ ***   anyone else? If so, please list their names. (
+ ***   or "Office hours on Thursday" is ok if you don't know their name.)   ***
+ ******************************************************************************/
 
-Yes, from many of students
+Yes, from @moonblaze
 
 
 
-/**********************************************************************
- *  Did you encounter any serious problems? If so, please describe.
- **********************************************************************/
+/******************************************************************************
+ ***   Did you encounter any serious problems? If yes, please describe.     ***
+ ******************************************************************************/
 
 No
 
 
-
-
-/**********************************************************************
- *  List any other comments here.                                     
- **********************************************************************/
-
+/******************************************************************************
+ ***   List any other comments here.                                        ***
+ ******************************************************************************/
 
