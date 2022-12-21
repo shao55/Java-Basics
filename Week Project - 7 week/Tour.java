@@ -2,9 +2,10 @@ public class Tour {
     // переменные для Tour
     private Node start;
 
-    // nested class Node
+    // вложенный класс Node
     private class Node {
         private Point p;
+        // указатель на следующую вершину
         private Node next;
     }
 
@@ -13,8 +14,7 @@ public class Tour {
         start = null;
     }
 
-    // creates the 4 point tour a-b-c-d-a (for debugging)
-    // конструктор для 4 точек
+    // конструктор для 4 точек a-b-c-d-a
     public Tour(Point a, Point b, Point c, Point d) {
         start = new Node();
         start.p = a;
@@ -30,11 +30,12 @@ public class Tour {
         fourth.next = start;
     }
 
-    // returns the number of points in the tour
+    // ретерн количество точек в пути (tour)
     public int size() {
         Node current = start;
         if (start == null) return 0;
         int count = 0;
+        // сперва действие потом проверка на условие
         do {
             count++;
             current = current.next;
@@ -42,19 +43,21 @@ public class Tour {
         return count;
     }
 
-    // returns the length of this tour
+    // ретерн длинны в пути (tour), расстояние между всеми точками
     public double length() {
         Node current = start;
         double length = 0.0;
         if (start == null) return length;
         do {
+            // сперва считай расстояние
             length += current.p.distanceTo(current.next.p);
             current = current.next;
+            // потом проверяй на стартовой точке ли ты?
         } while (!current.equals(start));
         return length;
     }
 
-    // returns a string representation of this tour
+    // ретерн стринговый вид объекта
     public String toString() {
         StringBuilder t = new StringBuilder();
         Node current = start;
@@ -69,11 +72,12 @@ public class Tour {
         }
     }
 
-    // draws this tour to standard drawing
+    // рисуем путь путем стандартного рисования draw, и nearest и smallest методы
     public void draw() {
         Node current = start;
         if (start != null) {
             do {
+                // drawTo - уже существующий метод
                 current.p.drawTo(current.next.p);
                 current = current.next;
             } while (!current.equals(start));
@@ -81,7 +85,7 @@ public class Tour {
     }
 
 
-    // inserts p using the nearest neighbor heuristic
+    // вставляем new P использую ближайший метод
     public void insertNearest(Point p) {
         if (start == null) {
             Node newP = new Node();
@@ -109,7 +113,7 @@ public class Tour {
 
     }
 
-    // inserts p using the smallest increase heuristic
+    // вставляем new P использую наименьший метод
     public void insertSmallest(Point p) {
         if (start == null) {
             Node newP = new Node();
@@ -129,7 +133,6 @@ public class Tour {
                     .distanceTo(start.next.next.p);
             double deltaL = newL - initial;
             do {
-                // StdOut.println(deltaL);
                 current.next = current.next.next;
                 current = current.next;
                 newP.next = current.next;
@@ -151,29 +154,30 @@ public class Tour {
 
     public static void main(String[] args) {
 
-        // define 4 points, corners of a square
+        // определяем 4 точки, углы квадрата
         Point a = new Point(1.0, 1.0);
         Point b = new Point(1.0, 4.0);
         Point c = new Point(4.0, 4.0);
         Point d = new Point(4.0, 1.0);
 
-        // create the tour a -> b -> c -> d -> a
+        // создаем путь a -> b -> c -> d -> a
         Tour squareTour = new Tour(a, b, c, d);
 
-        // create an empty tour
+        // создаем пустой путь
         Tour emptyTour = new Tour();
 
-        // print the size to standard output
+        // выводим размер через стандартный StdOut
         int size = squareTour.size();
         StdOut.println("# of points = " + size);
 
-        // print the tour length to standard output
+        // выводим длинну через стандартный StdOut
         double length = squareTour.length();
         StdOut.println("Tour length = " + length);
+        
+        // проверяем toString
+        // System.out.println(current.p);
 
-        // System.out.println(p);
-
-        // print square and empty tour to standard output
+        // выводим квадрат
         StdOut.println(squareTour);
 
         // определяем размеры
