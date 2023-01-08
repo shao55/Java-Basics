@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Week Project - 6 week">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Week Project - 6 week/fruit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Week Project - 6 week/fashion.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Week Project - 6 week/digits.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Week Project - 6 week/animals.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Week Project - 6 week/Kuzushiji.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Week Project - 6 week/music.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

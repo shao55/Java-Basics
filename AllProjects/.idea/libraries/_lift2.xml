@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name=".lift2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Week Project - 5 week/.lift/stdlib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Week Project - 5 week/.lift/introcs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Week Project - 5 week/.lift/checkstyle-lift.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
